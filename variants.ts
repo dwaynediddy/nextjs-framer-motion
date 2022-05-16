@@ -18,3 +18,13 @@ export const fadeIn = (direction: 'up' | 'down' = 'up'): Variants => {
         }
     }
 }
+
+export const staggerContainer: Variants = {
+    initial: {},
+    animate: {
+        transition: {
+            staggerChildren: 0.5,
+            delayChildren: 0.7,
+        }
+    }
+}
