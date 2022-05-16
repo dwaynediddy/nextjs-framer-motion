@@ -1,8 +1,14 @@
-import React from 'react'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../variants'
 
 const Header = () => {
   return (
-    <nav className="header">
+    <motion.nav 
+      variants={fadeIn('down')}
+      initial='initial'
+      animate='animate'
+      className="header"
+    >
         <span className="header-logo">CLEAN JUICE</span>
         <ul>
             <li>About</li>
@@ -12,7 +18,7 @@ const Header = () => {
 
         <span className="header-account">My account</span>
         <span className="header-user"></span>
-    </nav>
+    </motion.nav>
   )
 }
 
